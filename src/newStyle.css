@@ -1,0 +1,139 @@
+.background {
+	width: 390px;
+	height: 680px;
+	background-color: rgb(25, 28, 28);
+	border-radius: 10px 10px 20px 20px;
+	margin-left: 120px;
+	margin-top: 50px;
+	position: absolute;
+}
+.container {
+	padding-top: 10px;
+	border: 1px solid color;
+}
+
+.thirdRow {
+	color: tomato;
+	text-align: center;
+	font-size: 28px;
+	text-shadow: 2px 2px 8px rgb(0, 0, 0);
+	padding-top: 8px;
+}
+
+.cityToom {
+	width: 280px;
+	height: 280px;
+	margin: auto;
+	overflow: hidden;
+	border-radius: 500px;
+	-webkit-box-shadow: 0 8px 6px -6px black;
+	-moz-box-shadow: 0 8px 6px -6px black;
+	box-shadow: 0 8px 6px -6px black;
+	border: 3.5px solid tomato;
+}
+.dame {
+	width: auto;
+	height: 280px;
+	position: relative;
+}
+.days {
+	padding-top: 5px;
+	text-align: center;
+	color: tomato;
+}
+.input {
+	padding-top: 30px;
+	background-color: transparent;
+}
+.form-control,
+.btn,
+.form-control:focus,
+.btn:hover,
+.btn:focus {
+	-webkit-box-shadow: 0 8px 6px -6px black;
+	-moz-box-shadow: 0 8px 6px -6px black;
+	box-shadow: 0 8px 6px -6px black;
+	background-color: transparent;
+	outline-style: none;
+	border: transparent;
+}
+
+body {
+	background-color: rgb(78, 78, 62);
+}
+
+.float-left {
+	position: absolute;
+	top: 35%;
+	left: 59.5%;
+	transform: translate(-50%, -50%);
+	font-size: 50px;
+	color: tomato;
+}
+.typeOfTemp {
+	font-size: 31px;
+	vertical-align: text-top;
+	position: relative;
+	top: 8px;
+}
+a {
+	color: rgb(78, 78, 62);
+}
+a:hover {
+	color: tomato;
+	text-decoration: none;
+}
+
+.align-items-start {
+	color: rgb(13, 11, 104);
+	padding-bottom: 30px;
+}
+
+.today2 {
+	color: tomato;
+	text-align: center;
+	padding-top: 2px;
+	font-size: 30px;
+	position: relative;
+}
+.link-violet {
+	color: rgb(52, 56, 56);
+}
+.link-yellow {
+	color: tomato;
+}
+
+li {
+	list-style: none;
+	display: inline-block;
+	text-align: end;
+	color: teal;
+}
+.main {
+	background-color: transparent;
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+.battery {
+	color: tomato;
+	background-color: transparent;
+	padding-left: 4px;
+	padding-top: 8px;
+}
+.timey {
+	background-color: transparent;
+	color: tomato;
+	margin-left: auto;
+	text-align: end;
+	padding-left: 300px;
+	padding-top: 8px;
+}
+.myTown {
+	padding: 0px;
+	text-align: center;
+	position: relative;
+	top: 5px;
+	margin-top: -40px;
+	color: tomato;
+	font-size: 20px;
+}

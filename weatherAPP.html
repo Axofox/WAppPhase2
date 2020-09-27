@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Lexend+Peta&display=swap"
+			rel="stylesheet"
+		/>
+		<script
+			src="https://kit.fontawesome.com/0ee1f81162.js"
+			crossorigin="anonymous"
+		></script>
+		<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+			integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+			crossorigin="anonymous"
+		/>
+		<title>WeatherApp</title>
+	</head>
+	<link rel="stylesheet" href="src/newStyle.css" />
+	<body>
+		<div class="background">
+			<div class="main">
+				<li class="1">
+					<p class="timey" id="TTT">timey</p>
+				</li>
+				<li class="battery">
+					<i class="fas fa-battery-half page-wrap"></i>
+				</li>
+			</div>
+			<div class="today">
+				<p class="today2" id="todayLabel">Today</p>
+				<br />
+				<p class="myTown" id="myCity">Timisoara</p>
+			</div>
+			<div class="container">
+				<div class="cityToom">
+					<div>
+						<img class="dame" src="images/giphy.webp" alt="" />
+						<div class="float-left">
+							<span class="temperature" id="temp">23°</span>
+							<span class="typeOfTemp">
+								<a href="#" id="celsius-link" class="link-yellow">
+									<sup>C</sup></a
+								>
+								<sup>|</sup>
+								<a href="#" id="fahrenheit-link" class="link-violet"
+									><sup>F</sup></a
+								>
+							</span>
+						</div>
+					</div>
+				</div>
+				<div class="row align-items-end thirdRow">
+					<div class="col humidity"><i class="fas fa-water"></i></div>
+				</div>
+				<div class="row">
+					<div class="col input">
+						<form id="form">
+							<div class="input-group mb-3">
+								<div class="input-group-append">
+									<button class="btn btn-outline-secondary" type="button">
+										<i class="fas fa-map-marker-alt location"></i>
+									</button>
+								</div>
+								<input
+									type="search"
+									class="form-control"
+									placeholder="City search"
+									aria-label="Recipient's username"
+									aria-describedby="basic-addon2"
+									id="inputSearch"
+								/>
+
+								<div class="input-group-append">
+									<button
+										class="btn btn-outline-secondary"
+										type="submit"
+										id="searchBtn"
+									>
+										<i class="fas fa-search"></i>
+									</button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+				<div class="row days">
+					<div class="col">Mon</div>
+					<div class="col">Tue</div>
+					<div class="col">Wed</div>
+					<div class="col">Thu</div>
+					<div class="col">Fri</div>
+				</div>
+			</div>
+		</div>
+
+		<script src="src/index.js">
+			let apiUrl = "https://jsonplaceholder.typicode.com/users/1";
+		</script>
+	</body>
+</html>
