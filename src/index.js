@@ -41,6 +41,10 @@ document
 document
 	.getElementById("celsius-link")
 	.addEventListener("click", conversionToCelsius, false);
+	
+let apiKey = "85f0d2edf77153a605301a461e1c1922";
+let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=Munich&appid=${apiKey}`;
+console.log(apiUrl);
 
 currentDay(new Date());
 
