@@ -5,7 +5,7 @@
 	border-radius: 10px 10px 20px 20px;
 	margin-left: 120px;
 	margin-top: 50px;
-	position: absolute;
+	position: relative;
 }
 .container {
 	padding-top: 10px;
@@ -136,4 +136,13 @@ li {
 	margin-top: -40px;
 	color: tomato;
 	font-size: 20px;
+}
+.code {
+	color: black;
+	margin-bottom: 50px;
+	margin-left: 150px;
+}
+.codeName {
+	color: tomato;
+	margin-bottom: 50px;
 }
