@@ -20,17 +20,13 @@
 		/>
 		<title>WeatherApp</title>
 	</head>
-	<link rel="stylesheet" href="src/newStyle.css" />
+	<link rel="stylesheet" href="src/styles.css" />
 	<body>
 		<div class="background">
-			<div class="main">
-				<li class="1">
-					<p class="timey" id="TTT">timey</p>
-				</li>
-				<li class="battery">
-					<i class="fas fa-battery-half page-wrap"></i>
-				</li>
-			</div>
+			<span class="time-battery">
+				<li class="time" id="currentTime">time</li>
+				<li class="battery"><i class="fas fa-battery-half page-wrap"></i></li>
+			</span>
 			<div class="today">
 				<p class="today2" id="todayLabel">Today</p>
 				<br />
@@ -43,11 +39,11 @@
 						<div class="float-left">
 							<span class="temperature" id="temp">23°</span>
 							<span class="typeOfTemp">
-								<a href="#" id="celsius-link" class="link-yellow">
+								<a href="#" id="celsius-link" class="link-orange>
 									<sup>C</sup></a
 								>
 								<sup>|</sup>
-								<a href="#" id="fahrenheit-link" class="link-violet"
+								<a href="#" id="fahrenheit-link" class="link-darkGrey"
 									><sup>F</sup></a
 								>
 							</span>

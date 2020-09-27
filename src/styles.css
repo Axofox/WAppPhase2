@@ -1,3 +1,19 @@
+a {
+	color: rgb(78, 78, 62);
+}
+a:hover {
+	color: tomato;
+	text-decoration: none;
+}
+body {
+	background-color: rgb(78, 78, 62);
+}
+li {
+	list-style: none;
+	display: inline-block;
+	color: tomato;
+	padding-top: 10px;
+}
 .background {
 	width: 390px;
 	height: 680px;
@@ -58,10 +74,6 @@
 	border: transparent;
 }
 
-body {
-	background-color: rgb(78, 78, 62);
-}
-
 .float-left {
 	position: absolute;
 	top: 35%;
@@ -76,13 +88,6 @@ body {
 	position: relative;
 	top: 8px;
 }
-a {
-	color: rgb(78, 78, 62);
-}
-a:hover {
-	color: tomato;
-	text-decoration: none;
-}
 
 .align-items-start {
 	color: rgb(13, 11, 104);
@@ -96,38 +101,14 @@ a:hover {
 	font-size: 30px;
 	position: relative;
 }
-.link-violet {
+.link-darkGrey {
 	color: rgb(52, 56, 56);
 }
-.link-yellow {
+
+.link-orange {
 	color: tomato;
 }
 
-li {
-	list-style: none;
-	display: inline-block;
-	text-align: end;
-	color: teal;
-}
-.main {
-	background-color: transparent;
-	padding-top: 0px;
-	padding-bottom: 0px;
-}
-.battery {
-	color: tomato;
-	background-color: transparent;
-	padding-left: 4px;
-	padding-top: 8px;
-}
-.timey {
-	background-color: transparent;
-	color: tomato;
-	margin-left: auto;
-	text-align: end;
-	padding-left: 300px;
-	padding-top: 8px;
-}
 .myTown {
 	padding: 0px;
 	text-align: center;
@@ -145,4 +126,10 @@ li {
 .codeName {
 	color: tomato;
 	margin-bottom: 50px;
+}
+.time-battery {
+	margin-left: 318px;
+	display: inline;
+	color: tomato;
+	padding-top: 5px;
 }

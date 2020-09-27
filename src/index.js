@@ -10,19 +10,19 @@ function currentTime(time) {
 	let hours = time.getHours() < 10 ? "0" + time.getHours() : time.getHours();
 	let minutes =
 		time.getMinutes() < 10 ? "0" + time.getMinutes() : time.getMinutes();
-	document.getElementById("TTT").innerHTML = `${hours}:${minutes}`;
+	document.getElementById("currentTime").innerHTML = `${hours}:${minutes}`;
 }
 function conversionToFahrenheit() {
 	document.getElementById("temp").innerHTML = `${Math.round(
 		(temperature * 9) / 5 + 32
 	)}°`;
-	document.getElementById("celsius-link").className = "link-violet";
-	document.getElementById("fahrenheit-link").className = "link-yellow";
+	document.getElementById("celsius-link").className = "link-darkGrey";
+	document.getElementById("fahrenheit-link").className = "link-orange";
 }
 function conversionToCelsius() {
 	document.getElementById("temp").innerHTML = `${temperature}°`;
-	document.getElementById("celsius-link").className = "link-yellow";
-	document.getElementById("fahrenheit-link").className = "link-violet";
+	document.getElementById("celsius-link").className = "link-orange";
+	document.getElementById("fahrenheit-link").className = "link-darkGrey";
 }
 
 function searchCity(event) {
