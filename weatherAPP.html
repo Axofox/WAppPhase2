@@ -24,20 +24,20 @@
 	<body>
 		<div class="background">
 			<span class="time-battery">
-				<li class="time" id="currentTime">time</li>
+				<li class="time" id="currentTime"></li>
 				<li class="battery"><i class="fas fa-battery-half page-wrap"></i></li>
 			</span>
 			<div class="today">
-				<p class="today2" id="todayLabel">Today</p>
+				<p class="today2" id="todayLabel"></p>
 				<br />
-				<p class="myTown" id="myCity">Timisoara</p>
+				<p class="myTown" id="myCity"></p>
 			</div>
 			<div class="container">
 				<div class="cityToom">
 					<div>
 						<img class="dame" src="images/giphy.webp" alt="" />
 						<div class="float-left">
-							<span class="temperature" id="temp">11</span>
+							<span class="temperature" id="temp"></span>
 							<span class="typeOfTemp">
 								<a href="#" id="celsius-link" class="link-orange">
 									<sup>°C</sup></a
@@ -70,7 +70,6 @@
 									aria-describedby="basic-addon2"
 									id="inputSearch"
 								/>
-
 								<div class="input-group-append">
 									<button
 										class="btn btn-outline-secondary"
@@ -105,5 +104,16 @@
 			</small>
 		</div>
 		<script src="src/index.js"></script>
+		<script>
+
+			getWeatherFromApi("Paris");
+
+			currentDay(new Date());
+
+			currentTime(new Date());
+
+			document.getElementById("form").addEventListener("submit", searchCity);
+
+		</script>
 	</body>
 </html>

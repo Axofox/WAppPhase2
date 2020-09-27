@@ -14,12 +14,33 @@ function currentTime(time) {
 
 function searchCity(event) {
 	event.preventDefault();
-	let city = document.getElementById("myCity");
 	let cityInput = document.getElementById("inputSearch");
-	city.innerHTML = cityInput.value;
+
+	getWeatherFromApi(jsUcfirst(cityInput.value));
 	cityInput.value = "";
 }
-document.getElementById("form").addEventListener("submit", searchCity);
+
+function displayCurrentTemp(response) {
+	console.log(response.data);
+	let temperatureElem = document.getElementById("temp");
+	temperatureElem.innerHTML = Math.round(response.data.main.temp);
+	let myCityElem = document.getElementById("myCity");
+
+	myCityElem.innerHTML = response.data.name;
+}
+
+function getWeatherFromApi(city) {
+	console.log("Inside function, getting weather for: ", city);
+	let apiKey = "85f0d2edf77153a605301a461e1c1922";
+	let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+	console.log("apiUrl: ", apiUrl);
+	axios.get(apiUrl).then(displayCurrentTemp);
+}
+function currentLocation() {}
+
+function jsUcfirst(string) {
+	return string.charAt(0).toUpperCase() + string.slice(1);
+}
 
 // function conversionToFahrenheit() {
 // 	document.getElementById("temp").innerHTML = `${Math.round(
@@ -33,28 +54,9 @@ document.getElementById("form").addEventListener("submit", searchCity);
 // 	document.getElementById("celsius-link").className = "link-orange";
 // 	document.getElementById("fahrenheit-link").className = "link-darkGrey";
 // }
-
 // document
 // 	.getElementById("fahrenheit-link")
 // 	.addEventListener("click", conversionToFahrenheit, false);
-
 // document
 // 	.getElementById("celsius-link")
 // 	.addEventListener("click", conversionToCelsius, false);
-
-function displayTemp(response) {
-	let temperatureElem = document.getElementById("temp");
-	temperatureElem.innerHTML = Math.round(response.data.main.temp);
-	let myCityElem = document.getElementById("myCity");
-	myCityElem.innerHTML = response.data.name;
-}
-let temp = "11";
-let apiKey = "85f0d2edf77153a605301a461e1c1922";
-let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=Munich&appid=${apiKey}&units=metric`;
-axios.get(apiUrl).then(displayTemp);
-
-currentDay(new Date());
-
-currentTime(new Date());
-
-console.log("hello");
