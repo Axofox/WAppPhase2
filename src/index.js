@@ -61,7 +61,7 @@ function conversionToFahrenheit() {
 	document.getElementById("temp").innerHTML = `${Math.round(
 		(temperature * 9) / 5 + 32
 	)}`;
-	console.log(temperature);
+	console.log(temperature, "f");
 
 	document.getElementById("buttonConversion").innerHTML = "°F";
 	console.log(document.getElementById("temp").innerHTML);
@@ -69,7 +69,7 @@ function conversionToFahrenheit() {
 
 function conversionToCelsius() {
 	let temperature = document.getElementById("temp").innerHTML;
-	console.log(temperature);
+	console.log(temperature, "c");
 
 	document.getElementById("temp").innerHTML = `${Math.round(
 		((temperature - 32) * 5) / 9
@@ -84,11 +84,13 @@ document
 
 function conversionTemp() {
 	let currentCoversion = document.getElementById("buttonConversion").innerHTML;
-	console.log(currentCoversion);
-	if (currentCoversion === "°C") {
+	console.log(currentCoversion, "jhhhh");
+	if (currentCoversion.includes("°C")) {
 		conversionToFahrenheit();
+		console.log("convert C");
 	} else {
 		conversionToCelsius();
+		console.log("convert F");
 	}
 }
 

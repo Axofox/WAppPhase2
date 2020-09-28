@@ -153,4 +153,5 @@ li {
 }
 .btnConversion:hover {
 	outline-style: transparent;
+	border-color: transparent;
 }
