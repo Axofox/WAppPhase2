@@ -19,7 +19,7 @@ li {
 }
 
 .background {
-	width: 390px;
+	width: 400px;
 	height: 680px;
 	background-color: rgb(25, 28, 28);
 	border-radius: 10px 10px 20px 20px;
@@ -146,8 +146,10 @@ li {
 	font-size: 30px;
 	margin-top: 10px;
 	margin-right: 120px;
+	width: 70px;
 }
 
 .temperature{
-	/* padding-right: 48px; */
+	padding-right: 20px;
+	margin-left: -40px;
 }
