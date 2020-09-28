@@ -50,7 +50,14 @@
 						</div>
 					</div>
 				</div>
-
+				<div>
+					<div class="row details">
+						<div class="col-3">H:</div>
+						<div class="col-3">W:</div>
+						<div class="col-3">P:</div>
+						<div class="col-3">D:</div>
+					</div>
+				</div>
 				<div class="row align-items-end thirdRow"></div>
 				<div class="row">
 					<div class="col input">
@@ -109,11 +116,8 @@
 		<script src="src/index.js"></script>
 		<script>
 			geoLocation();
-
 			currentDay(new Date());
-
 			currentTime(new Date());
-
 			document.getElementById("form").addEventListener("submit", searchCity);
 			document
 				.getElementById("location")

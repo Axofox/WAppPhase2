@@ -58,7 +58,7 @@ li {
 	color: tomato;
 }
 .input {
-	padding-top: 30px;
+	padding-top: 15px;
 	background-color: transparent;
 }
 .form-control,
@@ -132,4 +132,10 @@ li {
 	display: inline;
 	color: tomato;
 	padding-top: 5px;
+}
+.details {
+	color: tomato;
+	padding-top: 20px;
+	text-align: center;
+	position: relative;
 }

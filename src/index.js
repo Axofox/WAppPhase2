@@ -20,7 +20,6 @@ function searchCity(event) {
 }
 
 function displayCurrentTemp(response) {
-	
 	console.log(response.data);
 	let temperatureElem = document.getElementById("temp");
 	temperatureElem.innerHTML = Math.round(response.data.main.temp);
@@ -50,7 +49,6 @@ function getTemperatureForPosition(position) {
 function geoLocation() {
 	navigator.geolocation.getCurrentPosition(getTemperatureForPosition);
 }
-
 
 // function conversionToFahrenheit() {
 // 	document.getElementById("temp").innerHTML = `${Math.round(
