@@ -40,7 +40,7 @@ function getWeatherFromApi(city) {
 function jsUcfirst(string) {
 	return string.charAt(0).toUpperCase() + string.slice(1);
 }
-
+jhfgkbjvhjfguhi
 // function conversionToFahrenheit() {
 // 	document.getElementById("temp").innerHTML = `${Math.round(
 // 		(temperature * 9) / 5 + 32
