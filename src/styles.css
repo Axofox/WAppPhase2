@@ -131,8 +131,9 @@ li {
 .details {
 	color: tomato;
 	padding-top: 20px;
-	text-align: center;
+	text-align: left;
 	position: relative;
+	padding-left: 20px;
 }
 
 .btnConversion,
