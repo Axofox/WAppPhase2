@@ -139,3 +139,18 @@ li {
 	text-align: center;
 	position: relative;
 }
+.tempAndButton {
+	display: inline;
+	margin-left: 30px;
+}
+.btnConversion {
+	color: tomato;
+	font-size: 25px;
+	margin-top: 80px;
+	background-color: transparent;
+	outline-style: none;
+	border-color: transparent;
+}
+.btnConversion:hover {
+	outline-style: transparent;
+}

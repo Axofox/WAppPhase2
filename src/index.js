@@ -22,7 +22,12 @@ function searchCity(event) {
 function displayCurrentTemp(response) {
 	console.log(response.data);
 	let temperatureElem = document.getElementById("temp");
+	let currentCoversion = document.getElementById("buttonConversion").innerHTML;
 	temperatureElem.innerHTML = Math.round(response.data.main.temp);
+	if (currentCoversion === "°F") {
+		conversionToFahrenheit();
+	}
+
 	let myCityElem = document.getElementById("myCity");
 
 	myCityElem.innerHTML = response.data.name;
@@ -50,18 +55,43 @@ function geoLocation() {
 	navigator.geolocation.getCurrentPosition(getTemperatureForPosition);
 }
 
-// function conversionToFahrenheit() {
-// 	document.getElementById("temp").innerHTML = `${Math.round(
-// 		(temperature * 9) / 5 + 32
-// 	)}°`;
-// 	document.getElementById("celsius-link").className = "link-darkGrey";
-// 	document.getElementById("fahrenheit-link").className = "link-orange";
-// }
-// function conversionToCelsius() {
-// 	document.getElementById("temp").innerHTML = `${temperature}°`;
-// 	document.getElementById("celsius-link").className = "link-orange";
-// 	document.getElementById("fahrenheit-link").className = "link-darkGrey";
-// }
+function conversionToFahrenheit() {
+	let temperature = document.getElementById("temp").innerHTML;
+	console.log(temperature);
+	document.getElementById("temp").innerHTML = `${Math.round(
+		(temperature * 9) / 5 + 32
+	)}`;
+	console.log(temperature);
+
+	document.getElementById("buttonConversion").innerHTML = "°F";
+	console.log(document.getElementById("temp").innerHTML);
+}
+
+function conversionToCelsius() {
+	let temperature = document.getElementById("temp").innerHTML;
+	console.log(temperature);
+
+	document.getElementById("temp").innerHTML = `${Math.round(
+		((temperature - 32) * 5) / 9
+	)}`;
+	console.log(temperature);
+	document.getElementById("buttonConversion").innerHTML = "°C";
+	console.log(document.getElementById("temp").innerHTML);
+}
+document
+	.getElementById("buttonConversion")
+	.addEventListener("click", conversionTemp);
+
+function conversionTemp() {
+	let currentCoversion = document.getElementById("buttonConversion").innerHTML;
+	console.log(currentCoversion);
+	if (currentCoversion === "°C") {
+		conversionToFahrenheit();
+	} else {
+		conversionToCelsius();
+	}
+}
+
 // document
 // 	.getElementById("fahrenheit-link")
 // 	.addEventListener("click", conversionToFahrenheit, false);
