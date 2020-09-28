@@ -36,7 +36,6 @@ function getWeatherFromApi(city) {
 	console.log("apiUrl: ", apiUrl);
 	axios.get(apiUrl).then(displayCurrentTemp);
 }
-function currentLocation() {}
 
 function jsUcfirst(string) {
 	return string.charAt(0).toUpperCase() + string.slice(1);
