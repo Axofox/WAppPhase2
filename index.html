@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -56,7 +55,7 @@
 				</div>
 				<div class="row">
 					<div class="col input">
-						<form id="form">
+						<form id="form" autocomplete="off">
 							<div class="input-group mb-3">
 								<div class="input-group-append">
 									<button class="btn btn-outline-secondary" type="button">
@@ -106,7 +105,6 @@
 		</div>
 		<script src="src/index.js"></script>
 		<script>
-
 			getWeatherFromApi("Paris");
 
 			currentDay(new Date());
@@ -114,7 +112,6 @@
 			currentTime(new Date());
 
 			document.getElementById("form").addEventListener("submit", searchCity);
-
 		</script>
 	</body>
 </html>
