@@ -70,7 +70,6 @@ function conversionToFahrenheit() {
 function conversionToCelsius() {
 	let temperature = document.getElementById("temp").innerHTML;
 	console.log(temperature, "c");
-
 	document.getElementById("temp").innerHTML = `${Math.round(
 		((temperature - 32) * 5) / 9
 	)}`;
