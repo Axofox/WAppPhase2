@@ -15,7 +15,6 @@ function currentTime(time) {
 function searchCity(event) {
 	event.preventDefault();
 	let cityInput = document.getElementById("inputSearch");
-
 	getWeatherFromApi(jsUcfirst(cityInput.value));
 	cityInput.value = "";
 }
@@ -40,7 +39,19 @@ function getWeatherFromApi(city) {
 function jsUcfirst(string) {
 	return string.charAt(0).toUpperCase() + string.slice(1);
 }
-jhfgkbjvhjfguhi
+
+function getTemperatureForPosition(position) {
+	let apiKey = "85f0d2edf77153a605301a461e1c1922";
+	let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${position.coords.latitude}&lon=${position.coords.longitude}&appid=${apiKey}&units=metric`;
+	axios.get(apiUrl).then(displayCurrentTemp);
+}
+
+function geoLocation() {
+	navigator.geolocation.getCurrentPosition(getTemperatureForPosition);
+}
+
+
+
 // function conversionToFahrenheit() {
 // 	document.getElementById("temp").innerHTML = `${Math.round(
 // 		(temperature * 9) / 5 + 32

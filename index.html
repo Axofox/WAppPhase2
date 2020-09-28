@@ -50,15 +50,18 @@
 						</div>
 					</div>
 				</div>
-				<div class="row align-items-end thirdRow">
-					<div class="col humidity"><i class="fas fa-water"></i></div>
-				</div>
+
+				<div class="row align-items-end thirdRow">div.col</div>
 				<div class="row">
 					<div class="col input">
 						<form id="form" autocomplete="off">
 							<div class="input-group mb-3">
 								<div class="input-group-append">
-									<button class="btn btn-outline-secondary" type="button">
+									<button
+										class="btn btn-outline-secondary"
+										type="button"
+										id="location"
+									>
 										<i class="fas fa-map-marker-alt location"></i>
 									</button>
 								</div>
@@ -105,13 +108,16 @@
 		</div>
 		<script src="src/index.js"></script>
 		<script>
-			getWeatherFromApi("Paris");
+			geoLocation();
 
 			currentDay(new Date());
 
 			currentTime(new Date());
 
 			document.getElementById("form").addEventListener("submit", searchCity);
+			document
+				.getElementById("location")
+				.addEventListener("click", geoLocation);
 		</script>
 	</body>
 </html>
