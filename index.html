@@ -9,15 +9,16 @@
 			src="https://kit.fontawesome.com/0ee1f81162.js"
 			crossorigin="anonymous"
 		></script>
-		<meta charset="UTF-8"/>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link
 			rel="stylesheet"
 			href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
 			integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
-			crossorigin="anonymous"/>
+			crossorigin="anonymous"
+		/>
 		<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-		<link rel="stylesheet" href="src/styles.css"/>
+		<link rel="stylesheet" href="src/styles.css" />
 		<title>WeatherApp</title>
 	</head>
 	<body>
@@ -48,6 +49,12 @@
 						<div class="col-3">P:</div>
 						<div class="col-3">D:</div>
 					</div>
+					<div class="row details numbers">
+						<div class="col-3" id="humidity">99%</div>
+						<div class="col-3" id="wind">20 m/s</div>
+						<div class="col-3" id="precipitation">20 mm</div>
+						<div class="col-3" id="description">clouds</div>
+					</div>
 				</div>
 				<div class="row align-items-end thirdRow"></div>
 				<div class="row">
@@ -58,7 +65,8 @@
 									<button
 										class="btn btn-outline-secondary"
 										type="button"
-										id="location">
+										id="location"
+									>
 										<i class="fas fa-map-marker-alt location"></i>
 									</button>
 								</div>
@@ -68,12 +76,14 @@
 									placeholder="City search"
 									aria-label="Recipient's username"
 									aria-describedby="basic-addon2"
-									id="inputSearch"/>
+									id="inputSearch"
+								/>
 								<div class="input-group-append">
 									<button
 										class="btn btn-outline-secondary"
 										type="submit"
-										id="searchBtn">
+										id="searchBtn"
+									>
 										<i class="fas fa-search"></i>
 									</button>
 								</div>
@@ -96,7 +106,9 @@
 				<a
 					href="https://github.com/Axofox/WAppPhase2"
 					target="_blank"
-					class="codeName">AxoFox</a>
+					class="codeName"
+					>AxoFox</a
+				>
 			</small>
 		</div>
 		<script src="src/index.js"></script>

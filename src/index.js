@@ -29,8 +29,19 @@ function displayCurrentTemp(response) {
 	}
 
 	let myCityElem = document.getElementById("myCity");
-
 	myCityElem.innerHTML = response.data.name;
+
+	let humidity = document.getElementById("humidity");
+	humidity.innerHTML = `${response.data.main.humidity}%`;
+
+	let wind = document.getElementById("wind");
+	wind.innerHTML = `${response.data.wind.speed} m/s`;
+
+	let precipitation = document.getElementById("precipitation");
+	precipitation.innerHTML = `${response.data.rain} mm`;
+
+	let description = document.getElementById("description");
+	description.innerHTML = `${response.data.weather[0].description}`;
 }
 
 function getWeatherFromApi(city) {

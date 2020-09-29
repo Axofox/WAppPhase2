@@ -145,7 +145,11 @@ li {
 	width: 70px;
 }
 
-.temperature{
+.temperature {
 	padding-right: 20px;
 	margin-left: -40px;
+}
+.numbers {
+	color: turquoise;
+	padding-top: 0px;
 }
