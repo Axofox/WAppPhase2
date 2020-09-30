@@ -29,7 +29,7 @@ li {
 }
 
 .container {
-	padding-top: 10px;
+	padding-top: 27px;
 	border: 1px solid color;
 }
 
@@ -42,8 +42,8 @@ li {
 }
 
 .cityToom {
-	width: 280px;
-	height: 280px;
+	width: 220px;
+	height: 220px;
 	margin: auto;
 	overflow: hidden;
 	border-radius: 500px;
@@ -66,7 +66,7 @@ li {
 }
 
 .input {
-	padding-top: 30px;
+	padding-top: 0px;
 	background-color: transparent;
 }
 
@@ -90,19 +90,6 @@ li {
 	transform: translate(-50%, -50%);
 	font-size: 50px;
 	color: tomato;
-}
-
-.today2 {
-	color: rgb(112, 32, 17);
-	text-align: center;
-	font-size: 23px;
-	margin-top: -45px;
-}
-
-.myTown {
-	text-align: center;
-	color: tomato;
-	font-size: 30px;
 }
 
 .code {
@@ -129,6 +116,7 @@ li {
 	text-align: left;
 	position: relative;
 	padding-left: 20px;
+	font-size: 15px;
 }
 
 .btnConversion,
@@ -149,7 +137,44 @@ li {
 	padding-right: 20px;
 	margin-left: -40px;
 }
-.numbers {
+
+.topDetails {
 	color: turquoise;
-	padding-top: 0px;
+	padding-left: 80px;
+	font-size: 15px;
+	padding-top: 10px;
+}
+
+.myTown {
+	font-size: 43px;
+	margin-left: -50px;
+}
+
+.today2 {
+	font-size: 10px;
+	padding-left: 18px;
+}
+
+.tableDetails {
+	color: turquoise;
+	font-size: 13px;
+}
+
+.future {
+	padding-top: 35px;
+	padding-left: 20px;
+	color: rgb(72, 77, 77);
+}
+
+.colorDetails {
+	color: tomato;
+}
+.today {
+	padding-top: 3px;
+}
+.underCircle {
+	background-color: rgb(244, 234, 232);
+	width: 400px;
+	position: relative;
+	margin: 30px auto;
 }

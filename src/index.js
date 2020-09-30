@@ -1,3 +1,4 @@
+var test = 1;
 function currentDay(date) {
 	let currentWeekDay = date.toLocaleString("en-us", { weekday: "long" });
 	let currentDate = date.getDate();
@@ -27,21 +28,22 @@ function displayCurrentTemp(response) {
 	if (currentCoversion === "°F") {
 		conversionToFahrenheit();
 	}
+	test = response;
 
 	let myCityElem = document.getElementById("myCity");
 	myCityElem.innerHTML = response.data.name;
 
 	let humidity = document.getElementById("humidity");
-	humidity.innerHTML = `${response.data.main.humidity}%`;
+	humidity.innerHTML = `Humidity: ${response.data.main.humidity}%`;
 
 	let wind = document.getElementById("wind");
-	wind.innerHTML = `${response.data.wind.speed} m/s`;
+	wind.innerHTML = `Wind: ${response.data.wind.speed} m/s`;
 
 	let precipitation = document.getElementById("precipitation");
-	precipitation.innerHTML = `${response.data.rain} mm`;
+	precipitation.innerHTML = `Precipitation: ${response.data.rain} mm`;
 
 	let description = document.getElementById("description");
-	description.innerHTML = `${response.data.weather[0].description}`;
+	description.innerHTML = response.data.weather[0].main;
 }
 
 function getWeatherFromApi(city) {

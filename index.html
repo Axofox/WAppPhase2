@@ -27,10 +27,15 @@
 				<li class="time" id="currentTime"></li>
 				<li class="battery"><i class="fas fa-battery-half page-wrap"></i></li>
 			</span>
-			<div class="today">
-				<p class="myTown" id="myCity"></p>
-				<br />
-				<p class="today2" id="todayLabel"></p>
+			<div class="row topDetails colorDetails">
+				<div class="col-6 today">
+					<div class="row myTown" id="myCity"></div>
+					<div class="row today2" id="todayLabel"></div>
+				</div>
+				<div class="col-6 icons">
+					<!-- <i class="fas fa-cloud-rain"></i> -->
+					<!-- <div class="row cloudy">Very Cloudy</div> -->
+				</div>
 			</div>
 			<div class="container">
 				<div class="cityToom">
@@ -42,21 +47,20 @@
 						</div>
 					</div>
 				</div>
-				<div>
-					<div class="row details">
-						<div class="col-3">H:</div>
-						<div class="col-3">W:</div>
-						<div class="col-3">P:</div>
-						<div class="col-3">D:</div>
-					</div>
-					<div class="row details numbers">
-						<div class="col-3" id="humidity">99%</div>
-						<div class="col-3" id="wind">20 m/s</div>
-						<div class="col-3" id="precipitation">20 mm</div>
-						<div class="col-3" id="description">clouds</div>
+				<div class="underCircle">
+					<div class="row tableDetails colorDetails">
+						<div class="col-4">
+							<div class="row" id="humidity">Humidity: 99%</div>
+							<div class="row" id="wind">Wind: 99%</div>
+						</div>
+						<div class="col-4 icons"><i class="fas fa-cloud-rain"></i></div>
+						<div class="col-4 precip">
+							<div class="row" id="precipitation">Precipitation: 99%</div>
+							<div class="row" id="description">Very cloudy</div>
+						</div>
 					</div>
 				</div>
-				<div class="row align-items-end thirdRow"></div>
+				<div class="row future">Near future</div>
 				<div class="row">
 					<div class="col input">
 						<form id="form" autocomplete="off">
@@ -100,6 +104,7 @@
 				</div>
 			</div>
 		</div>
+
 		<div class="code">
 			<small>
 				Coded by,
