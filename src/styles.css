@@ -1,3 +1,79 @@
+.background {
+	width: 400px;
+	height: 680px;
+	background-color: rgb(25, 28, 28);
+	border-radius: 10px 10px 20px 20px;
+	position: relative;
+}
+
+.time-battery {
+	margin-left: 330px;
+	display: inline;
+	color: tomato;
+	padding-top: 5px;
+}
+
+.topBottomDetailsColors {
+	color: tomato;
+}
+
+.yourCity {
+	font-size: 43px;
+	margin: auto;
+}
+
+.currentDate {
+	font-size: 13px;
+	margin: auto;
+	padding-left: 50px;
+}
+
+.container {
+	padding-top: 27px;
+	border: 1px solid color;
+}
+
+.innerCircle {
+	width: 280px;
+	height: 280px;
+	margin: auto;
+	overflow: hidden;
+	border-radius: 500px;
+	-webkit-box-shadow: 0 8px 6px -6px black;
+	-moz-box-shadow: 0 8px 6px -6px black;
+	box-shadow: 0 8px 6px -6px black;
+	border: 3.5px solid tomato;
+}
+
+.float-left {
+	position: absolute;
+	top: 38%;
+	left: 59.5%;
+	transform: translate(-50%, -50%);
+	font-size: 50px;
+	color: tomato;
+}
+
+.temperature {
+	padding-right: 20px;
+	margin-left: -40px;
+}
+
+.btnConversion,
+.btnConversion:hover,
+.btnConversion:focus {
+	background-color: transparent;
+	border-color: transparent;
+	position: fixed;
+	outline-style: none;
+	color: tomato;
+	font-size: 30px;
+	margin-top: 10px;
+	margin-right: 120px;
+	width: 70px;
+}
+
+
 a {
 	color: rgb(78, 78, 62);
 }
@@ -18,21 +94,6 @@ li {
 	padding-top: 10px;
 }
 
-.background {
-	width: 400px;
-	height: 680px;
-	background-color: rgb(25, 28, 28);
-	border-radius: 10px 10px 20px 20px;
-	margin-left: 120px;
-	margin-top: 50px;
-	position: relative;
-}
-
-.container {
-	padding-top: 27px;
-	border: 1px solid color;
-}
-
 .thirdRow {
 	color: tomato;
 	text-align: center;
@@ -41,19 +102,7 @@ li {
 	padding-top: 8px;
 }
 
-.cityToom {
-	width: 220px;
-	height: 220px;
-	margin: auto;
-	overflow: hidden;
-	border-radius: 500px;
-	-webkit-box-shadow: 0 8px 6px -6px black;
-	-moz-box-shadow: 0 8px 6px -6px black;
-	box-shadow: 0 8px 6px -6px black;
-	border: 3.5px solid tomato;
-}
-
-.dame {
+.imageInnerCircle {
 	width: auto;
 	height: 280px;
 	position: relative;
@@ -83,31 +132,19 @@ li {
 	border: transparent;
 }
 
-.float-left {
-	position: absolute;
-	top: 38%;
-	left: 59.5%;
-	transform: translate(-50%, -50%);
-	font-size: 50px;
+.topBottomDetailsColors {
 	color: tomato;
 }
 
 .code {
 	color: black;
 	margin-bottom: 50px;
-	margin-left: 150px;
+	/* margin-left: 150px; */
 }
 
 .codeName {
 	color: tomato;
 	margin-bottom: 50px;
-}
-
-.time-battery {
-	margin-left: 310px;
-	display: inline;
-	color: tomato;
-	padding-top: 5px;
 }
 
 .details {
@@ -119,62 +156,28 @@ li {
 	font-size: 15px;
 }
 
-.btnConversion,
-.btnConversion:hover,
-.btnConversion:focus {
-	background-color: transparent;
-	border-color: transparent;
-	position: fixed;
-	outline-style: none;
-	color: tomato;
-	font-size: 30px;
-	margin-top: 10px;
-	margin-right: 120px;
-	width: 70px;
-}
-
-.temperature {
-	padding-right: 20px;
-	margin-left: -40px;
-}
-
 .topDetails {
 	color: turquoise;
-	padding-left: 80px;
 	font-size: 15px;
 	padding-top: 10px;
 }
 
-.myTown {
-	font-size: 43px;
-	margin-left: -50px;
-}
-
-.today2 {
-	font-size: 10px;
-	padding-left: 18px;
-}
-
-.tableDetails {
+.bottomDetailsTable {
 	color: turquoise;
 	font-size: 13px;
+	margin: auto;
+	text-align: center;
+	margin-top: 30px;
 }
 
-.future {
-	padding-top: 35px;
-	padding-left: 20px;
-	color: rgb(72, 77, 77);
-}
-
-.colorDetails {
-	color: tomato;
-}
-.today {
+.currentDetails {
 	padding-top: 3px;
+	text-align: center;
+	padding-left: 100px;
 }
-.underCircle {
-	background-color: rgb(244, 234, 232);
-	width: 400px;
-	position: relative;
-	margin: 30px auto;
+
+.icons {
+	font-size: 39px;
+	margin-top: -5px;
+	text-align: center;
 }
