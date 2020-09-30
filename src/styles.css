@@ -13,7 +13,7 @@
 	padding-top: 5px;
 }
 
-.topBottomDetailsColors {
+.topBottomDetailsColorsAndPosition {
 	color: tomato;
 }
 
@@ -25,11 +25,9 @@
 .currentDate {
 	font-size: 13px;
 	margin: auto;
-	padding-left: 50px;
 }
 
 .container {
-	padding-top: 27px;
 	border: 1px solid color;
 }
 
@@ -72,7 +70,6 @@
 	margin-right: 120px;
 	width: 70px;
 }
-
 
 a {
 	color: rgb(78, 78, 62);
@@ -139,7 +136,6 @@ li {
 .code {
 	color: black;
 	margin-bottom: 50px;
-	/* margin-left: 150px; */
 }
 
 .codeName {
@@ -147,25 +143,16 @@ li {
 	margin-bottom: 50px;
 }
 
-.details {
-	color: tomato;
-	padding-top: 40px;
-	text-align: left;
-	position: relative;
-	padding-left: 20px;
-	font-size: 15px;
-}
-
-.topDetails {
+.currentDateAndCity {
 	color: turquoise;
 	font-size: 15px;
-	padding-top: 10px;
+	padding-top: 5px;
 }
 
 .bottomDetailsTable {
 	color: turquoise;
 	font-size: 13px;
-	margin: auto;
+
 	text-align: center;
 	margin-top: 30px;
 }
@@ -173,11 +160,14 @@ li {
 .currentDetails {
 	padding-top: 3px;
 	text-align: center;
-	padding-left: 100px;
 }
 
 .icons {
 	font-size: 39px;
 	margin-top: -5px;
 	text-align: center;
+}
+.detailTable {
+	padding-top: 30px;
+	color: tomato;
 }

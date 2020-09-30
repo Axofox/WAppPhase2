@@ -26,14 +26,14 @@
 			<span class="time-battery">
 				<li class="time" id="currentTime"></li>
 				<li class="battery"><i class="fas fa-battery-half page-wrap"></i></li>
-			</span>
-			<div class="row topBottomDetailsColors">
-				<div class="col currentDetails">
-					<div class="row yourCity" id="myCity"></div>
-					<div class="row currentDate" id="todayLabel"></div>
-				</div>
+      </span>
+
+			<div class="container">
+        <div class="currentDateAndCity">
+        <div class="row"><div class="row yourCity" id="myCity"></div></div>
+        <div class="row"><div class="row currentDate" id="todayLabel"></div></div>
+      </div>
 			</div>
-			<class class="container">
 				<div class="innerCircle">
 					<div>
 						<img class="imageInnerCircle" src="images/giphy.webp" alt="" />
@@ -43,8 +43,8 @@
 						</div>
 					</div>
 				</div>
-				<div class="detailTable topBottomDetailsColors">
-          <div class="row tableDetails colorDetails">
+				<div class="detailTable topBottomDetailsColorsAndPosition">
+          <div class="row">
           <div class="col-4">
             <div class="row" id="humidity">Humidity: 99%</div>
             <div class="row" id="wind">Wind: 99%</div>
@@ -76,14 +76,12 @@
 									placeholder="City search"
 									aria-label="Recipient's username"
 									aria-describedby="basic-addon2"
-									id="inputSearch"
-								/>
+									id="inputSearch"/>
 								<div class="input-group-append">
 									<button
 										class="btn btn-outline-secondary"
 										type="submit"
-										id="searchBtn"
-									>
+										id="searchBtn">
 										<i class="fas fa-search"></i>
 									</button>
 								</div>
