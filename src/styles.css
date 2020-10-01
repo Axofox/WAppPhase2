@@ -7,7 +7,7 @@
 }
 
 .time-battery {
-	margin-left: 320px;
+	margin-left: 310px;
 	display: inline;
 	color: tomato;
 	padding-top: 5px;
@@ -20,21 +20,20 @@
 }
 
 .yourCity {
-	font-size: 43px;
+	font-size: 35px;
 	margin: auto;
 	margin-top: -10px;
 	color: rgb(112, 177, 161);
 }
 
 .currentDate {
-	font-size: 13px;
+	font-size: 20px;
 	margin: auto;
 	padding-bottom: 20px;
 }
 
 .container {
 	border: 1px solid color;
-	/* padding-left: 80px; */
 	padding-top: 18px;
 }
 
@@ -165,4 +164,14 @@ li {
 
 .colorDetails {
 	padding-left: 65px;
+}
+.hum,
+.cloud {
+	margin-left: 15px;
+	margin-bottom: 8px;
+}
+.wind,
+.rain {
+	margin-right: -15px;
+	margin-top: 8px;
 }

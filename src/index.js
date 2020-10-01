@@ -34,16 +34,16 @@ function displayCurrentTemp(response) {
 	myCityElem.innerHTML = response.data.name;
 
 	let humidity = document.getElementById("humidity");
-	humidity.innerHTML = `Humidity: ${response.data.main.humidity}%`;
+	humidity.innerHTML = `: ${response.data.main.humidity}%`;
 
 	let wind = document.getElementById("wind");
-	wind.innerHTML = `Wind: ${response.data.wind.speed} m/s`;
+	wind.innerHTML = `: ${Math.round(response.data.wind.speed)} m/s`;
 
-	let precipitation = document.getElementById("precipitation");
-	precipitation.innerHTML = `Precipitation: ${response.data.rain} mm`;
+	let precipitation = document.getElementById("rain");
+	precipitation.innerHTML = `: ${response.data.rain} mm`;
 
-	let description = document.getElementById("description");
-	description.innerHTML = response.data.weather[0].main;
+	let description = document.getElementById("cloud");
+	description.innerHTML = `: ${response.data.weather[1].main}`;
 }
 
 function getWeatherFromApi(city) {
