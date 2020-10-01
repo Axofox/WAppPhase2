@@ -1,9 +1,10 @@
 .background {
   width: 400px;
   height: 680px;
-  background-color: rgb(25, 28, 28);
-  border-radius: 10px 10px 20px 20px;
+  background-color: #5c6b73;
+  border-radius: 20px 20px 20px 20px;
   position: relative;
+  overflow: hidden;
 }
 
 .time-battery {
@@ -14,7 +15,7 @@
 }
 
 .topBottomDetailsColorsAndPosition {
-  color: tomato;
+  color: #0e3b43;
   padding-top: 20px;
   text-align: center;
 }
@@ -23,7 +24,7 @@
   font-size: 35px;
   margin: auto;
   margin-top: -10px;
-  color: tomato;
+  color: #0e3b43;
 }
 
 .currentDate {
@@ -46,12 +47,12 @@
   -webkit-box-shadow: 0 8px 6px -6px black;
   -moz-box-shadow: 0 8px 6px -6px black;
   box-shadow: 0 8px 6px -6px black;
-  border: 3.5px solid tomato;
+  border: 3.5px solid #0e3b43;
 }
 
 .float-left {
   position: absolute;
-  top: 38%;
+  top: 36%;
   left: 59.5%;
   transform: translate(-50%, -50%);
   font-size: 50px;
@@ -59,9 +60,7 @@
 }
 
 .temperature {
-  padding-right: 20px;
-  margin-left: -40px;
-  color: tomato;
+  color: #0e3b43;
   font-size: 50px;
 }
 
@@ -72,13 +71,10 @@
   border-color: transparent;
   position: fixed;
   outline-style: none;
-  color: tomato;
+  color: #0e3b43;
   font-size: 30px;
-  margin-top: 10px;
-  margin-right: 120px;
-  width: 70px;
+  margin-top: 7px;
 }
-
 a {
   color: rgb(78, 78, 62);
 }
@@ -103,13 +99,13 @@ li {
   width: auto;
   height: 280px;
   position: relative;
+  padding-left: 100px;
 }
 
 .days {
   padding-top: 5px;
   text-align: center;
-  color: teal;
-  /* position: relative; */
+  color: tomato;
 }
 
 .input {
@@ -122,12 +118,13 @@ li {
 .form-control:focus,
 .btn:hover,
 .btn:focus {
-  -webkit-box-shadow: 0 8px 6px -6px black;
+  /* -webkit-box-shadow: 0 8px 6px -6px black;
   -moz-box-shadow: 0 8px 6px -6px black;
-  box-shadow: 0 8px 6px -6px black;
+  box-shadow: 0 8px 6px -6px black; */
   background-color: transparent;
   outline-style: none;
   border: transparent;
+  color: #0e3b43;
 }
 
 .code {
@@ -141,7 +138,7 @@ li {
 }
 
 .currentDateAndCity {
-  color: teal;
+  color: #0e3b43;
   font-size: 15px;
 }
 
@@ -154,11 +151,11 @@ li {
   font-size: 39px;
   margin-top: -5px;
   text-align: center;
-  color: teal;
+  color: #0e3b43;
 }
 
 .future {
-  color: tomato;
+  color: #0e3b43;
   padding-top: 20px;
   padding-left: 20px;
 }
@@ -185,6 +182,6 @@ li {
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 .iconDetails {
-  color: teal;
+  color: #0e3b43;
   font-style: normal;
 }
