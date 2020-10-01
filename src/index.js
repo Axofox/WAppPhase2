@@ -96,7 +96,7 @@ document
 
 function conversionTemp() {
 	let currentCoversion = document.getElementById("buttonConversion").innerHTML;
-	console.log(currentCoversion, "jhhhh");
+	console.log(currentCoversion, "AAA");
 	if (currentCoversion.includes("°C")) {
 		conversionToFahrenheit();
 		console.log("convert C");
