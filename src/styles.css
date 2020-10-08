@@ -24,7 +24,7 @@
   font-size: 35px;
   margin: auto;
   margin-top: -10px;
-  color: #0e3b43;
+  color: tomato;
 }
 
 .currentDate {
@@ -97,9 +97,10 @@ li {
 
 .imageInnerCircle {
   width: auto;
-  height: 280px;
+  height: 580px;
   position: relative;
-  padding-left: 100px;
+
+  transform: rotate(-35deg);
 }
 
 .days {
