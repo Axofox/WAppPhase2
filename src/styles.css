@@ -96,10 +96,9 @@ li {
 }
 
 .imageInnerCircle {
-  margin: auto;
-  position: relative;
-  /* vertical-align: auto; */
-  display: block;
+  background-repeat: no-repeat;
+  background-size: auto;
+  background: url(sunny.webp);
 }
 
 .days {
