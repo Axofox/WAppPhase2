@@ -39,11 +39,20 @@ function displayCurrentTemp(response) {
   let wind = document.getElementById("wind");
   wind.innerHTML = `: ${Math.round(response.data.wind.speed)} m/s`;
 
-  let precipitation = document.getElementById("rain");
-  precipitation.innerHTML = `: ${response.data.rain} mm`;
+  let precipitation = document.getElementById("precipitation");
+
+  if (response.data.rain === undefined) {
+    displayRain(false);
+  } else {
+    precipitation.innerHTML = `: ${response.data.rain["1h"]} mm`;
+    displayRain(response.data.rain["1h"] > 0);
+  }
 
   let description = document.getElementById("cloud");
-  description.innerHTML = `: ${response.data.weather[1].main}`;
+  description.innerHTML = `: ${response.data.weather[0].main}`;
+
+  let weatherImage = document.getElementById("weatherImage");
+  weatherImage.src = `images/${response.data.weather[0].main}.webp`;
 }
 
 function getWeatherFromApi(city) {
@@ -105,7 +114,14 @@ function conversionTemp() {
     console.log("convert F");
   }
 }
-
+function displayRain(display) {
+  let rain = document.getElementById("rain");
+  if (display) {
+    rain.style = "display: block";
+  } else {
+    rain.style = "display: none";
+  }
+}
 // document
 // 	.getElementById("fahrenheit-link")
 // 	.addEventListener("click", conversionToFahrenheit, false);

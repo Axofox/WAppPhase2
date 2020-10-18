@@ -39,7 +39,7 @@
 
       <div class="innerCircle">
         <div>
-          <img class="imageInnerCircle" src="images/200.webp" alt="" />
+          <img class="imageInnerCircle" src="images/200.webp" alt="" id= "weatherImage"/>
           <div class="float-left">
             <span class="temperature" id="temp"></span>
             <button id="buttonConversion" class="btnConversion">°C</button>
@@ -74,7 +74,7 @@
               >
             </div>
             <div class="row rain">
-              <i class="fas fa-cloud-showers-heavy iconDetails"
+              <i id="rain" class="fas fa-cloud-showers-heavy iconDetails"
                 ><span
                   class="font"
                   id="precipitation"
@@ -159,6 +159,7 @@
       document
         .getElementById("location")
         .addEventListener("click", geoLocation);
+      displayRain(false);
     </script>
   </body>
 </html>
