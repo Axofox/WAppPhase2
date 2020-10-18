@@ -52,7 +52,7 @@ function displayCurrentTemp(response) {
   description.innerHTML = `: ${response.data.weather[0].main}`;
 
   let weatherImage = document.getElementById("weatherImage");
-  weatherImage.src = `images/${response.data.weather[0].main}.webp`;
+  weatherImage.style = `background-image: url('images/${response.data.weather[0].main}.webp')`;
 }
 
 function getWeatherFromApi(city) {

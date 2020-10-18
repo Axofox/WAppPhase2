@@ -95,10 +95,18 @@ li {
   padding-top: 10px;
 }
 
-.imageInnerCircle {
+.innerCircle {
+  width: 260px;
+  height: 260px;
+  margin: auto;
+  overflow: hidden;
+  border-radius: 500px;
+  -webkit-box-shadow: 0 8px 6px -6px black;
+  -moz-box-shadow: 0 8px 6px -6px black;
+  box-shadow: 0 8px 6px -6px black;
+  border: 3.5px solid #0e3b43;
+  background-size: cover;
   background-repeat: no-repeat;
-  background-size: auto;
-  background: url(sunny.webp);
 }
 
 .days {
