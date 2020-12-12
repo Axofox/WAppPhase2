@@ -1,0 +1,152 @@
+import React from "react";
+import "./styles.css";
+
+export default function App() {
+  return (
+    <div>
+      <div className="background">
+        <span className="time-battery">
+          <li className="time" id="currentTime"></li>
+          <li className="battery">
+            <i className="fas fa-battery-half page-wrap"></i>
+          </li>
+        </span>
+
+        <div className="container topBottomDetailsColorsAndPosition">
+          <div className="currentDateAndCity">
+            <div className="row">
+              <div className="row yourCity" id="myCity"></div>
+            </div>
+            <div className="row">
+              <div className="row currentDate" id="todayLabel"></div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          id="weatherImage"
+          className="innerCircle"
+          style={{background-image: "url('images/rain.webp')"}}
+        >
+          <div>
+            <div className="float-left">
+              <span className="temperature" id="temp"></span>
+              <button id="buttonConversion" className="btnConversion">
+                °C
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div className="container topBottomDetailsColorsAndPosition">
+          <div className="row colorDetails">
+            <div className="col-6">
+              <div className="row hum">
+                <i className="fas fa-tint iconDetails">
+                  <span
+                    id="humidity"
+                    className="font"
+                    style={{font-weight: "normal"}}
+                  >
+                    : 20%
+                  </span>
+                </i>
+              </div>
+              <div className="row wind">
+                <i className="fas fa-wind iconDetails">
+                  <span id="wind" className="font" style={{font-weight: "normal"}}>
+                    : 20 km/h
+                  </span>
+                </i>
+              </div>
+            </div>
+            <div className="col-6">
+              <div className="row cloud">
+                <i className="fas fa-cloud-sun iconDetails">
+                  <span id="cloud" className="font" style={{font-weight: "normal"}}>
+                    : Cloudy
+                  </span>
+                </i>
+              </div>
+              <div className="row rain">
+                <i id="rain" className="fas fa-cloud-showers-heavy iconDetails">
+                  <span
+                    className="font"
+                    id="precipitation"
+                    style={{font-weight: "normal"}}
+                  >
+                    : Drizzle
+                  </span>
+                </i>
+              </div>
+            </div>
+          </div>
+
+          <div className="row future">Near future</div>
+
+          <div className="row">
+            <div className="col input">
+              <form id="form" autocomplete="off">
+                <div className="input-group mb-3">
+                  <div className="input-group-append">
+                    <button
+                      className="btn btn-outline-secondary"
+                      type="button"
+                      id="location"
+                    >
+                      <i className="fas fa-map-marker-alt location"></i>
+                    </button>
+                  </div>
+                  <input
+                    type="search"
+                    className="form-control"
+                    placeholder="City search"
+                    aria-label="Recipient's username"
+                    aria-describedby="basic-addon2"
+                    id="inputSearch"
+                  />
+                  <div class="input-group-append">
+                    <button
+                      className="btn btn-outline-secondary"
+                      type="submit"
+                      id="searchBtn"
+                    >
+                      <i className="fas fa-search"></i>
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+
+          <div className="row days">
+            <div className="col">Mon</div>
+            <div className="col">Tue</div>
+            <div className="col">Wed</div>
+            <div className="col">Thu</div>
+            <div className="col">Fri</div>
+          </div>
+          <div className="row days">
+            <div className="col">Mon</div>
+            <div className="col">Tue</div>
+            <div className="col">Wed</div>
+            <div className="col">Thu</div>
+            <div className="col">Fri</div>
+          </div>
+        </div>
+      </div>
+      <div className="code">
+        <small>
+          Coded by,
+          <a
+            href="https://github.com/Axofox/WAppPhase2"
+            target="_blank"
+            className="codeName"
+          >
+            AxoFox
+          </a>
+        </small>
+      </div>
+    </div>
+  );
+}

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend+Peta&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/0ee1f81162.js"
+      crossorigin="anonymous"
+    ></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="src/styles.css" />
+    <title>WeatherApp</title>
+  </head>
+  <body>
+    <div class="background">
+      <span class="time-battery">
+        <li class="time" id="currentTime"></li>
+        <li class="battery"><i class="fas fa-battery-half page-wrap"></i></li>
+      </span>
+
+      <div class="container topBottomDetailsColorsAndPosition">
+        <div class="currentDateAndCity">
+          <div class="row"><div class="row yourCity" id="myCity"></div></div>
+          <div class="row">
+            <div class="row currentDate" id="todayLabel"></div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        id="weatherImage"
+        class="innerCircle"
+        style="background-image: url('images/rain.webp')"
+      >
+        <div>
+          <div class="float-left">
+            <span class="temperature" id="temp"></span>
+            <button id="buttonConversion" class="btnConversion">°C</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="container topBottomDetailsColorsAndPosition">
+        <div class="row colorDetails">
+          <div class="col-6">
+            <div class="row hum">
+              <i class="fas fa-tint iconDetails"
+                ><span id="humidity" class="font" style="font-weight: normal"
+                  >: 20%</span
+                ></i
+              >
+            </div>
+            <div class="row wind">
+              <i class="fas fa-wind iconDetails"
+                ><span id="wind" class="font" style="font-weight: normal"
+                  >: 20 km/h</span
+                ></i
+              >
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="row cloud">
+              <i class="fas fa-cloud-sun iconDetails"
+                ><span id="cloud" class="font" style="font-weight: normal"
+                  >: Cloudy</span
+                ></i
+              >
+            </div>
+            <div class="row rain">
+              <i id="rain" class="fas fa-cloud-showers-heavy iconDetails"
+                ><span
+                  class="font"
+                  id="precipitation"
+                  style="font-weight: normal"
+                  >: Drizzle</span
+                ></i
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="row future">Near future</div>
+
+        <div class="row">
+          <div class="col input">
+            <form id="form" autocomplete="off">
+              <div class="input-group mb-3">
+                <div class="input-group-append">
+                  <button
+                    class="btn btn-outline-secondary"
+                    type="button"
+                    id="location"
+                  >
+                    <i class="fas fa-map-marker-alt location"></i>
+                  </button>
+                </div>
+                <input
+                  type="search"
+                  class="form-control"
+                  placeholder="City search"
+                  aria-label="Recipient's username"
+                  aria-describedby="basic-addon2"
+                  id="inputSearch"
+                />
+                <div class="input-group-append">
+                  <button
+                    class="btn btn-outline-secondary"
+                    type="submit"
+                    id="searchBtn"
+                  >
+                    <i class="fas fa-search"></i>
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <div class="row days">
+          <div class="col">Mon</div>
+          <div class="col">Tue</div>
+          <div class="col">Wed</div>
+          <div class="col">Thu</div>
+          <div class="col">Fri</div>
+        </div>
+        <div class="row days">
+          <div class="col">Mon</div>
+          <div class="col">Tue</div>
+          <div class="col">Wed</div>
+          <div class="col">Thu</div>
+          <div class="col">Fri</div>
+        </div>
+      </div>
+    </div>
+    <div class="code">
+      <small>
+        Coded by,
+        <a
+          href="https://github.com/Axofox/WAppPhase2"
+          target="_blank"
+          class="codeName"
+          >AxoFox</a
+        >
+      </small>
+    </div>
+    <script src="src/index.js"></script>
+    <script>
+      geoLocation();
+      currentDay(new Date());
+      currentTime(new Date());
+      document.getElementById("form").addEventListener("submit", searchCity);
+      document
+        .getElementById("location")
+        .addEventListener("click", geoLocation);
+      displayRain(false);
+    </script>
+  </body>
+</html>
